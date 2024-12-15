@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@react-email/components";
 import { useState } from "react";
 
 export default function Home() {
@@ -39,7 +38,7 @@ export default function Home() {
             flexDirection: "column",
           }}
         >
-          <div>Hello I'm Hashir,</div>
+          <div>Hello I&apos;m Hashir,</div>
           <div>Welcome to my emails project</div>
           <div>Subscribe to my email Newsletter</div>
         </div>
