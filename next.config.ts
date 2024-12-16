@@ -1,10 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+module.exports = {
   async headers() {
     return [
       {
-        source: "/api/email",
+        // matching all API routes
+        source: "/api/*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
@@ -22,5 +21,3 @@ const nextConfig: NextConfig = {
     ];
   },
 };
-
-export default nextConfig;
