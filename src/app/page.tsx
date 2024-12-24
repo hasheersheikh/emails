@@ -11,7 +11,7 @@ export default function Home() {
       const response = await fetch("/api/email", {
         method: "POST",
         body: JSON.stringify({
-          email: "hasheersheikh@gmail.com",
+          email: email,
           name: "",
         }),
       });
