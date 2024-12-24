@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "Hashir <onboarding@resend.dev>",
+      from: "Hashir <hashir@hashirsheikh.site>",
       to: email,
       subject: "Welcome To My react email project",
       react: WelcomeEmail(),
